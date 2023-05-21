@@ -1,10 +1,11 @@
 package top.porchwood.HardlessMachine;
 
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import top.porchwood.HardlessMachine.HMItem.Cars.SteamBoat;
 import top.porchwood.HardlessMachine.HMItem.Machines.BlockBreaker;
 import top.porchwood.HardlessMachine.HMItem.RunningTools.Head;
@@ -15,7 +16,7 @@ import top.porchwood.Logger;
 public class HMItems {
 
     public static final SlimefunItemStack NULL =
-            new SlimefunItemStack("NULL", Heads.NULL, "&7&oNULL");
+            new SlimefunItemStack("NULL", Heads.HM_NULL, "&7&o空");
 
     public static final SlimefunItemStack SPRING_BOAT =
             new SlimefunItemStack("SPRING_BOAT", Material.BLAZE_ROD, "&f小&f跳板", "&7原地起飞~", "&8▷ &b1.2&7m/s");

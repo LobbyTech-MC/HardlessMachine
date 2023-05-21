@@ -1,8 +1,8 @@
 package top.porchwood.HardlessMachine.HMItem.RunningTools;
 
-import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
-import org.bukkit.inventory.ItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 
 public class Heads {
-    public static final ItemStack NULL = SkullItem.fromURL(Head.getPath("LostTexture"));
+	public static final SlimefunItemStack HM_NULL =
+            new SlimefunItemStack("HM_NULL", Head.getBase64("LostTexture"), null);
 }

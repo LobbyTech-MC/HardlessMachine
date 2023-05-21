@@ -177,4 +177,8 @@ public class Logger {
         }
         return out.toString();
     }
+
+	public static boolean isDebug() {
+		return DEBUG;
+	}
 }

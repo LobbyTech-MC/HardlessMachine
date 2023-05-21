@@ -1,9 +1,10 @@
 package top.porchwood.HardlessMachine;
 
-import io.github.thebusybiscuit.slimefun4.core.categories.MultiCategory;
-import io.github.thebusybiscuit.slimefun4.core.categories.SubCategory;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import org.bukkit.Material;
+
+import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import top.porchwood.HardlessMachine.HMItem.RunningTools.Heads;
 import top.porchwood.HardlessMachine.HMItem.RunningTools.Keys;
 
@@ -22,21 +23,21 @@ public class HMCategorys {
     //    //categoryInit();
     //}
 
-    public static final MultiCategory HM_MAIN_CATEGORY =
-            new MultiCategory(Keys.makeKey("MainCategory"), new CustomItem(Heads.NULL, "&fHardlessMachine"));
+    public static final NestedItemGroup HM_MAIN_ITEMGROUP =
+            new NestedItemGroup(Keys.makeKey("MainItemGroup"), new CustomItemStack(Heads.HM_NULL, "&f轻功科技"));
 
-    public static final SubCategory TOOLS =
-            new SubCategory(Keys.makeKey("Tools"), HM_MAIN_CATEGORY, new CustomItem(Material.DIAMOND_PICKAXE, "&fHardlessMachine &a工具"));
+    public static final SubItemGroup TOOLS =
+            new SubItemGroup(Keys.makeKey("Tools"), HM_MAIN_ITEMGROUP, new CustomItemStack(Material.DIAMOND_PICKAXE, "&f轻功 &a工具"));
 
-    public static final SubCategory MACHINE =
-            new SubCategory(Keys.makeKey("Machine"), HM_MAIN_CATEGORY, new CustomItem(Material.BLAST_FURNACE, "&fHardlessMachine &a机器"));
+    public static final SubItemGroup MACHINE =
+            new SubItemGroup(Keys.makeKey("Machine"), HM_MAIN_ITEMGROUP, new CustomItemStack(Material.BLAST_FURNACE, "&f轻功 &a机器"));
 
-    public static final SubCategory LOGISTICS =
-            new SubCategory(Keys.makeKey("Logistics"), HM_MAIN_CATEGORY, new CustomItem(Material.BUCKET, "&fHardlessMachine &a物流"));
+    public static final SubItemGroup LOGISTICS =
+            new SubItemGroup(Keys.makeKey("Logistics"), HM_MAIN_ITEMGROUP, new CustomItemStack(Material.BUCKET, "&f轻功 &a物流"));
 
-    public static final SubCategory STORAGE =
-            new SubCategory(Keys.makeKey("Storage"), HM_MAIN_CATEGORY, new CustomItem(Material.LIGHT_BLUE_SHULKER_BOX, "&fHardlessMachine &a存储"));
-    public static final SubCategory TRANSPORTATION =
-            new SubCategory(Keys.makeKey("Transportation"), HM_MAIN_CATEGORY, new CustomItem(Material.DARK_OAK_BOAT, "&fHardlessMachine &a交通"));
+    public static final SubItemGroup STORAGE =
+            new SubItemGroup(Keys.makeKey("Storage"), HM_MAIN_ITEMGROUP, new CustomItemStack(Material.LIGHT_BLUE_SHULKER_BOX, "&f轻功 &a存储"));
+    public static final SubItemGroup TRANSPORTATION =
+            new SubItemGroup(Keys.makeKey("Transportation"), HM_MAIN_ITEMGROUP, new CustomItemStack(Material.DARK_OAK_BOAT, "&f轻功 &a交通"));
 
 }

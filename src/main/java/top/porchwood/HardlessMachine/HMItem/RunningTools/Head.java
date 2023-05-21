@@ -4,6 +4,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class Head {
+	
+	public static final String LIGHT_WORK = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRhZTU1ZDI5MGZiOGQzOTg2M2IzODU2Y2JmZmRlZTNiOTA2ZDkxNjY3NzVmNDgwMzE2NzU4OWY3NDVhMTg3ZCJ9fX0=";
 
     public static final String DEFAULT_ROOT_RESOURCES = "https://gitee.com/this_is_a_cat/plugin-heads/raw/master/HardlessMachine/";
 
